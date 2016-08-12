@@ -1,0 +1,2 @@
+/Users/Frank/Desktop/gencommand_proj4/Cufflinks/Day8/transcripts.gtf
+/Users/Frank/Desktop/gencommand_proj4/Cufflinks/Day16/transcripts.gtf

@@ -1,0 +1,7 @@
+/usr/local/bin/cuffmerge -g /Users/Frank/Desktop/gencommand_proj4/athal_genes.gtf -p 8 -o /Users/Frank/Desktop/gencommand_proj4/Cuffmerge /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/GTFs.txt
+gtf_to_sam -F /Users/Frank/Desktop/gencommand_proj4/Cufflinks/Day8/transcripts.gtf /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/gtf2sam_tmp.0.G0EDUr
+gtf_to_sam -F /Users/Frank/Desktop/gencommand_proj4/Cufflinks/Day16/transcripts.gtf /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/gtf2sam_tmp.1.DHRzBF
+sort -k 3,3 -k 4,4n --temporary-directory=/Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/ /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/gtf2sam_tmp.0.G0EDUr /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/gtf2sam_tmp.1.DHRzBF > /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/mergeSam_tmp.2.BvpUWG
+cufflinks -o /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/ -F 0.05 -g /Users/Frank/Desktop/gencommand_proj4/athal_genes.gtf -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 8 /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/tmp/mergeSam_tmp.2.BvpUWG
+cuffcompare -o tmp_meta_asm -C -G  -r /Users/Frank/Desktop/gencommand_proj4/athal_genes.gtf  /Users/Frank/Desktop/gencommand_proj4/Cuffmerge//transcripts.gtf
+cuffcompare -o tmp_meta_asm -C -G  -r /Users/Frank/Desktop/gencommand_proj4/athal_genes.gtf  /Users/Frank/Desktop/gencommand_proj4/Cuffmerge//merged.gtf

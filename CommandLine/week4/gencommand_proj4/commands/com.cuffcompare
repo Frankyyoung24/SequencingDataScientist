@@ -1,0 +1,15 @@
+DATADIR=/Users/Frank/Desktop/gencommand_proj4/Cufflinks
+REFDIR=/Users/Frank/Desktop/gencommand_proj4
+WORKDIR=/Users/Frank/Desktop/gencommand_proj4/Cuffcompare
+
+mkdir -p $WORKDIR/Day8
+
+cuffcompare -r $REFDIR/athal_genes.gtf \
+            -R $DATADIR/Day8/transcripts.gtf \
+            -o $WORKDIR/Day8 \
+
+mkdir -p $WORKDIR/Day16
+
+cuffcompare -r $REFDIR/athal_genes.gtf \
+            -R $DATADIR/Day16/transcripts.gtf \
+            -o $WORKDIR/Day16 \

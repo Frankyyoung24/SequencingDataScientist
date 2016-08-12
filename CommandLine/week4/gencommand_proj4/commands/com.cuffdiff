@@ -1,0 +1,7 @@
+WORKDIR=/Users/Frank/Desktop/gencommand_proj4
+THDIR=/Users/Frank/Desktop/gencommand_proj4/Tophat
+ANNOT=/Users/Frank/Desktop/gencommand_proj4/athal_genes.gtf
+
+cuffmerge -g $ANNOT -p 8 -o $WORKDIR/Cuffmerge $WORKDIR/Cuffmerge/GTFs.txt
+echo “done merge”
+cuffdiff -o $WORKDIR/Cuffdiff -p 10 $WORKDIR/Cuffmerge/merged.gtf $THDIR/Day8/accepted_hits.bam $THDIR/Day16/accepted_hits.bam

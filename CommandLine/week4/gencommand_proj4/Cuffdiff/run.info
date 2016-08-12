@@ -1,0 +1,5 @@
+param	value
+cmd_line	cuffdiff -o /Users/Frank/Desktop/gencommand_proj4/Cuffdiff -p 10 /Users/Frank/Desktop/gencommand_proj4/Cuffmerge/merged.gtf /Users/Frank/Desktop/gencommand_proj4/Tophat/Day8/accepted_hits.bam /Users/Frank/Desktop/gencommand_proj4/Tophat/Day16/accepted_hits.bam 
+version	2.2.1
+SVN_revision	4237
+boost_version	106100

@@ -1,0 +1,8 @@
+THDIR=/Users/Frank/Desktop/gencommand_proj4/Tophat/
+WORKDIR=/Users/Frank/Desktop/gencommand_proj4/Cufflinks
+
+mkdir -p $WORKDIR/Day8
+cd $WORKDIR/Day8; cufflinks -p 8 $THDIR/Day8/accepted_hits.bam
+
+mkdir -p $WORKDIR/Day16
+cd $WORKDIR/Day16; cufflinks -p 8 $THDIR/Day16/accepted_hits.bam

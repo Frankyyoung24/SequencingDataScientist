@@ -1,0 +1,15 @@
+DATADIR=/Users/Frank/Desktop/gencommand_proj4
+WORKDIR=/Users/Frank/Desktop/gencommand_proj4/Tophat/
+BWT2IDX=/Users/Frank/Desktop/gencommand_proj4/athal/athal
+
+mkdir -p $WORKDIR/Day8
+
+tophat -o $WORKDIR/Day8 -p 10 \
+        $BWT2IDX \
+        $DATADIR/Day8.fastq 
+
+mkdir -p $WORKDIR/Day16
+
+tophat -o $WORKDIR/Day16 -p 10 \
+        $BWT2IDX \
+        $DATADIR/Day16.fastq 

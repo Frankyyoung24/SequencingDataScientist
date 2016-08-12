@@ -1,0 +1,26 @@
+
+[2016-08-12 13:20:38] Beginning TopHat run (v2.1.1)
+-----------------------------------------------
+[2016-08-12 13:20:38] Checking for Bowtie
+		  Bowtie version:	 2.2.9.0
+[2016-08-12 13:20:38] Checking for Bowtie index files (genome)..
+[2016-08-12 13:20:38] Checking for reference FASTA file
+	Warning: Could not find FASTA file /Users/Frank/Desktop/gencommand_proj4/athal/athal.fa
+[2016-08-12 13:20:38] Reconstituting reference FASTA file from Bowtie index
+  Executing: /usr/local/bin/bowtie2-inspect /Users/Frank/Desktop/gencommand_proj4/athal/athal > /Users/Frank/Desktop/gencommand_proj4/Tophat//Day16/tmp/athal.fa
+[2016-08-12 13:20:38] Generating SAM header for /Users/Frank/Desktop/gencommand_proj4/athal/athal
+[2016-08-12 13:20:38] Preparing reads
+	 left reads: min. length=50, max. length=50, 57985 kept reads (0 discarded)
+[2016-08-12 13:20:39] Mapping left_kept_reads to genome athal with Bowtie2 
+[2016-08-12 13:20:41] Mapping left_kept_reads_seg1 to genome athal with Bowtie2 (1/2)
+[2016-08-12 13:20:42] Mapping left_kept_reads_seg2 to genome athal with Bowtie2 (2/2)
+[2016-08-12 13:20:42] Searching for junctions via segment mapping
+[2016-08-12 13:20:43] Retrieving sequences for splices
+[2016-08-12 13:20:43] Indexing splices
+[2016-08-12 13:20:43] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2016-08-12 13:20:43] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2016-08-12 13:20:43] Joining segment hits
+[2016-08-12 13:20:44] Reporting output tracks
+-----------------------------------------------
+[2016-08-12 13:20:47] A summary of the alignment counts can be found in /Users/Frank/Desktop/gencommand_proj4/Tophat//Day16/align_summary.txt
+[2016-08-12 13:20:47] Run complete: 00:00:08 elapsed
